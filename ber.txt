@@ -1,0 +1,12 @@
+IDEA
+*********************
+Remnote bet better and command line based
+
+WHAT IS NEEDED
+**********************************
+Be able to make new sets and notecards
+
+Be able to read sets and cards
+
+SRS
+
