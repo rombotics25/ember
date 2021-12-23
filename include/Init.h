@@ -2,4 +2,6 @@
 
 void init();
 
-void generate();
+void mvdirs();
+
+void generate_dirs();

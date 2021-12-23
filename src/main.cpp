@@ -7,9 +7,9 @@
 int main(){
 	
 	init();
-	std::string UserName = "";
+	/*std::string UserName = "";
 	std::cin>>UserName;
 	login(UserName);
-	
+	*/
 
 }
