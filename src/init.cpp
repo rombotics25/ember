@@ -4,7 +4,10 @@
 #include "Init.h"
 #include <iostream>
 #include <fstream>
-#include <direct.h>
+#include <string>
+#include <filesystem>
+
+namespace fs = std::filesystem;
 
 std::fstream checks;
 
@@ -14,8 +17,8 @@ bool is_empty(std::fstream& pFile)
 }
 
 void generate_dirs(){
-    _mkdir("ember");
-
+    std::string directory_name("tmp_dir");
+    fs::create_directory("ember");
 }
 
 void mvdirs(){
