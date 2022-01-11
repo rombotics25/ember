@@ -1,8 +1,16 @@
 #include <iostream>
 #include "Login.h"
+#include <filesystem>
+#include <unistd.h>
 
-void create_usr_acct(const char*Name){
-    system("mkdir -p /%s");
-    system("cd /%s");
+
+namespace fs = std::filesystem;
+
+void create_usr_acct(){
+    fs::create_directory("User");
+    system("cd User");
+    std::cout <<"Welcome to Ember! Please mind the dust while I set things up for you\n";
 }
-//hi
+//TODO
+    //take in users name and output a dir with that name
+    //cd into thee dir (!!)
